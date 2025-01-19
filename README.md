@@ -1,50 +1,44 @@
-# Welcome to your Expo app 👋
+# Proyecto Frontend - Gestión de Tareas
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este proyecto es la parte frontend de la aplicación de gestión de tareas. Utiliza React Native junto con TypeScript y la librería React Native Paper para crear una interfaz interactiva y moderna para gestionar tareas. Se conecta con el backend mediante APIs RESTful para obtener, crear, editar y eliminar tareas.
 
-## Get started
+## Instalación
 
-1. Install dependencies
+Para ejecutar este proyecto, asegúrate de tener Node.js y npm.
+
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/fabrizioCast/tasks-front.git
+   cd tasks-front
+   ```
+
+2. Instala las dependencias:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. Inicia el servidor de desarrollo:
 
    ```bash
-    npx expo start
+   npm start
    ```
 
-In the output, you'll find options to open the app in a
+## Estructura del Proyecto
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **src**: Contiene todo el código fuente de la aplicación.
+  - **components**: Componentes reutilizables de la UI.
+  - **hooks**: Hooks personalizados, como `useTask` para la gestión de tareas.
+  - **screens**: Las pantallas principales de la aplicación, como `TaskScreen`.
+  - **services**: Servicios para la interacción con la API backend, como `TaskService`.
+  - **interface**: Tipos de datos y interfaces de TypeScript, como `TaskProps`.
+- **App.tsx**: El punto de entrada de la aplicación.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Funcionalidades
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- **Lista de tareas**: Visualiza las tareas con paginación y filtros por estado.
+- **Creación de tareas**: Agrega nuevas tareas mediante un formulario modal.
+- **Edición de tareas**: Modifica las tareas existentes con un formulario modal.
+- **Eliminación de tareas**: Elimina tareas con confirmación.
+- **Filtros de estado**: Filtra las tareas por estado (Pendiente, En Proceso, Completada).
