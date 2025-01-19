@@ -19,7 +19,13 @@ Para ejecutar este proyecto, asegúrate de tener Node.js y npm.
    npm install
    ```
 
-3. Inicia el servidor de desarrollo:
+3. Completa las variables de entorno en el archivo `.env`:
+
+   ```bash
+   EXPO_PUBLIC_API_URL=
+   ```
+
+4. Inicia el servidor de desarrollo:
 
    ```bash
    npm start
